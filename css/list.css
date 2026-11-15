@@ -1,19 +1,35 @@
 * {
     box-sizing: border-box;
     border: 2px solid black;
-    font-size: 18pt;
 }
 
 html,
 body{
     font-family: system-ui, sans-serif;
+    font-size: 16pt;
     margin: 0;
     padding: 0;
     height:100%;
 }
 
 h1 {
+    font-size: 1rem;
     margin: 0;
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.sidebar-overlay {
+    display: none;
+    background-color: #00000080;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
 }
 
 .list {
@@ -35,12 +51,16 @@ h1 {
     padding: 0.5rem;
 }
 
+.sidebar-button img{ 
+    height: 100%;
+}
+
+.sidebar-button,
 .page-title,
 .searchbar,
 .create-post,
 .profile-picture,
 .profile-username {
-    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -63,9 +83,10 @@ h1 {
     min-width: 0;
 }
 
+.sidebar-button,
 .profile-picture {
     flex-shrink: 0;
-    width: 3rem;
+    aspect-ratio: 1/1;
 }
 
 .profile-username {
@@ -86,17 +107,45 @@ h1 {
     margin: 1rem;
 }
 
+.post-content {
+    font-size: 0.8rem;
+}
+
 @media(max-width: 64rem){
     .profile-username,
-    .page-title,
-    .menu{
+    .page-title {
         display: none;
     }
-
-    .list {     
+    
+    .list {
+        padding: 0;
+        gap: 0;
+        grid-template-rows: 3rem 1fr;
         grid-template-areas:
         "header header"
         "feed feed";
+    }
+
+    .header {
+        gap: 0.25rem;
+        padding: 0.25rem;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -250rem;
+        height: 100%;
+        z-index: 10;
+        width: 6rem;
+        background-color: #FFFFFF;
+    }
+
+    #sidebar-active:checked ~ .menu {
+        left: 0;
+    }
+    #sidebar-active:checked ~ .sidebar-overlay {
+        display: block;
     }
 }
 
