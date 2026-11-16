@@ -62,7 +62,7 @@ a:hover {
     z-index: 9;
 }
 
-.list {
+.page {
     display: grid;
     grid-template-columns: 12rem 1fr;
     grid-template-rows: 4rem 1fr;
@@ -106,6 +106,10 @@ a:hover {
 .create-post:hover {
     background-color: var(--accent-color-2);
     color: var(--bg-color);
+}
+
+.profile-picture {
+    border-width: 2px;
 }
 
 .profile-username {
@@ -226,7 +230,7 @@ a:hover {
         display: none;
     }
     
-    .list {
+    .page {
         padding: 0;
         gap: 0;
         grid-template-rows: 3rem 1fr;
