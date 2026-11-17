@@ -55,7 +55,7 @@
     cursor: pointer;
     transition: 0.2s ease-in-out;
     background-color: var(--bg-color);
-    }
+}
 
 .create-post:hover {
     background-color: var(--accent-color-2);
