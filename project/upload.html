@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create post</title>
+    <meta name="description" content="STG's for everyone is a shoot 'em up / bullet hell forum. Post, discuss and talk about your favourite games">
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+    <div class="page">
+        <div class="go-back">
+            <a href="index.html">&lt&ltgo back</a>
+        </div>
+        <h1>Create a post</h1>
+        <h2>Post name</h2>
+        <input 
+            class="post-name"
+            type="text"
+            placeholder="Enter post header"
+            required
+            minlength="1"
+            maxlength="128"
+            />
+        <h2>Post content</h2>
+        <textarea 
+            class="post-content"
+            placeholder="Enter post content"
+            rows="10">
+        </textarea>
+        <h2>Image upload</h2>
+        <input
+            class="attach-file"
+            type="file"
+            accept=".png,.jpeg,.jpg,.webp"
+            />
+        <div onclick="location.href='index.html'" class="create-post">Create post</div>
+        
+    </div>
+    
+</body>
+</html>
