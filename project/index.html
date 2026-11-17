@@ -32,15 +32,14 @@
 
             <strong>Menu</strong>
             <ul>
-                <li>
-                    <button onclick="toggleColorMode()">Toggle light mode</button>
-                </li>
                 <li>home</li>
                 <li>guides</li>
                 <li>relases</li>
                 <li>games</li>
                 <li>series</li>
             </ul>
+            
+            <button onclick="toggleColorMode()">Toggle light mode</button>
         </nav>
         <main class="feed">
             <article class="post">
@@ -117,6 +116,7 @@
     </div>
     <script>
         function toggleColorMode() {
+            //TO DO: save variable in localstorage so theme change works across pages and after refresh
             var element = document.body;
             element.classList.toggle("light-theme");
         }
