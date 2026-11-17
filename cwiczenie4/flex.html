@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ćw. 2 · FLEX · Techniki WWW, zajęcia 04</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; margin: 0; }
+    div { border: 2px solid #000; padding: 0.5rem; }
+
+    .logo { font-weight: 800; letter-spacing: 0.1em; }
+    .menu a { color: #000; }
+    .karty { margin: 1rem; }
+    .karta { min-height: 6rem; }
+    .srodek { height: 200px; margin: 1rem; }
+    .kwadrat { width: 80px; height: 80px; background: #000; }
+
+    /* ↓↓↓ TWOJE REGUŁY (kroki 1–4) ↓↓↓ */
+    .pasek { 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .karty {
+        display: flex;
+    }
+
+    .karta {
+        flex: 1 1 200px;
+    }
+
+    .srodek {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="pasek">
+    <div class="logo">LOKAL</div>
+    <div class="menu">
+      <a href="#">Lista</a>
+      <a href="#">Dodaj</a>
+      <a href="#">O nas</a>
+    </div>
+  </div>
+
+  <div class="karty">
+    <div class="karta">Karta 1</div>
+    <div class="karta">Karta 2</div>
+    <div class="karta">Karta 3</div>
+    <div class="karta">Karta 4</div>
+  </div>
+
+  <div class="srodek">
+    <div class="kwadrat"></div>
+  </div>
+</body>
+</html>
