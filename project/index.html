@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STG's for everyone</title>
-    <meta name="description" content="STG's for everyone is a shoot 'em up / bullet hell forum. Post, discuss and talk about your favourite games">
-    <link rel="stylesheet" href="css/list.css">
+    <meta name="description"
+        content="STG's for everyone is a shoot 'em up / bullet hell forum. Post, discuss and talk about your favourite games">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -17,27 +18,28 @@
         <header class="header">
             <label for="sidebar-active" class="sidebar-button">
                 <svg class="menu-icon" viewBox="0 0 24 24" height="24px" width="24px">
-                    <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z"/>
+                    <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z" />
                 </svg>
             </label>
             <h1 class="page-title">STG's for everyone</h1>
             <input class="searchbar" type="text" placeholder="Search">
-            <div class="create-post">Create post</div>
+            <div onclick="location.href='upload.html'" class="create-post">Create post</div>
             <img class="profile-picture" src="users/example-user/pfp.webp" alt="user-pfp">
             <div class="profile-username">ExampleUsername</div>
         </header>
 
         <nav class="menu">
-             
+
             <strong>Menu</strong>
             <ul>
                 <li>
-                    <button onclick="toggleColorMode()">Toggle light mode</button></li>
+                    <button onclick="toggleColorMode()">Toggle light mode</button>
+                </li>
                 <li>home</li>
                 <li>guides</li>
                 <li>relases</li>
                 <li>games</li>
-                <li>series</li> 
+                <li>series</li>
             </ul>
         </nav>
         <main class="feed">
@@ -51,7 +53,7 @@
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
                 </div>
                 <div class="post-link">
-                    <a href="add_link_to_post">read more>></a>
+                    <a href="post.html">read more>></a>
                 </div>
             </article>
 
@@ -67,7 +69,7 @@
                 <div class="post-link">
                     <a href="add_link_to_post">read more>></a>
                 </div>
-             </article>
+            </article>
 
             <article class="post">
                 <h2 class="post-title">Post 3</h2>
@@ -110,15 +112,15 @@
                     <a href="add_link_to_post">read more>></a>
                 </div>
             </article>
-            
+
         </main>
     </div>
-<script>
-function toggleColorMode() {
-   var element = document.body;
-   element.classList.toggle("light-theme");
-}
-</script>
+    <script>
+        function toggleColorMode() {
+            var element = document.body;
+            element.classList.toggle("light-theme");
+        }
+    </script>
 </body>
 
 </html>
