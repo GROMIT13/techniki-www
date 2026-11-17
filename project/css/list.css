@@ -45,6 +45,7 @@
     background-color: var(--bg-color);
     font-size: 0.8rem;
     border-width: 2px;
+    
 }
 
 .create-post {
@@ -90,6 +91,13 @@
 .menu li {
     color: var(--text-color);
     font-size: 0.8rem;
+}
+
+.toggle-color-mode {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    border-width: 2px
 }
 
 .post-link {
@@ -212,6 +220,10 @@
         height: 100%;
         z-index: 10;
         width: fit-content;
+    }
+
+    .menu ul {
+        padding-left: 1rem;
     }
 
     #sidebar-active:checked ~ .menu {

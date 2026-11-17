@@ -28,13 +28,16 @@
         </header>
 
         <nav class="menu">
+             
             <strong>Menu</strong>
             <ul>
+                <li>
+                    <button onclick="toggleColorMode()">Toggle light mode</button></li>
                 <li>home</li>
                 <li>guides</li>
                 <li>relases</li>
                 <li>games</li>
-                <li>series</li>
+                <li>series</li> 
             </ul>
         </nav>
         <main class="feed">
@@ -110,6 +113,12 @@
             
         </main>
     </div>
+<script>
+function toggleColorMode() {
+   var element = document.body;
+   element.classList.toggle("light-theme");
+}
+</script>
 </body>
 
 </html>
